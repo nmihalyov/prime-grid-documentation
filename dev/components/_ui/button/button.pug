@@ -1,0 +1,7 @@
+mixin button(style, type, text, className, options)
+  - className = `button--${style} ${className || ''}`
+
+  if type === 'link'
+    a.button(class=className, href=options.link, target="_blank", rel="noopener")!= text
+  else if type === 'download'
+    a.button(class=className, download=options.file, href=options.file, target="_blank", rel="noopener")!= text
