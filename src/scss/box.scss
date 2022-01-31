@@ -1,0 +1,36 @@
+.box {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px 0;
+  background-color: $red;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  &.row {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  &--big {
+    height: 150px;
+  }
+  &-1 {
+    background-color: $red2;
+  }
+  &-2 {
+    padding: 15px 0;
+    background-color: $red3;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .box {
+    font-size: 14px;
+    padding: 10px 0;
+    &--big {
+      height: 100px;
+      &-2 {
+        padding: 10px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.heading {
+  display: inline-block;
+  margin: 0 0 15px;
+  padding: 5px 10px;
+  background-color: $black;
+  color: #fff;
+  font: {
+    size: 26px;
+    weight: 700;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .heading {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+}

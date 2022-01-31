@@ -1,0 +1,12 @@
+mixin button(style, type, text, className, options)
+  - className = `button button--${style} ${className || ''}`
+  - isDisabled = options && options.disabled
+
+  if isDisabled
+    - className += 'button--disabled'
+
+  if type === 'link'
+    a(class=className, target="_blank", rel="noopener noreferrer", href=options.link, disabled=isDisabled, download=options.download)
+      if options.icon
+        span.button__icon(data-icon=options.icon)
+      != text

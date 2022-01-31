@@ -1,0 +1,10 @@
+mixin header
+  header.container
+    .row.row-center
+      .col
+        .header
+          h1.title Prime Grid
+          h2.subtitle A prime grid for your projects!
+          .buttons
+            +button('primary', 'link', '<span class="button__icon button__icon--download"></span> Download ZIP', '', {download: 'prime-grid-1.6.4.zip'})
+            +button('secondary', 'link', '<span class="button__icon button__icon--github"></span> View on GitHub', '', {link: 'https://github.com/nmihalyov/prime-grid'})

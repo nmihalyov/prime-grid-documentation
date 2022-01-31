@@ -1,0 +1,91 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  @include font-fix;
+}
+
+* {
+  outline: none;
+  
+  &:focus-visible:not([disabled]):not([readonly]) {
+    outline: 2px solid $lightBlue;
+    outline-offset: 0;
+    transition: outline 0s;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  color: $black;
+  line-height: 1.4;
+  font: {
+    family: $font;
+    size: 18px;
+    weight: 400;
+  }
+}
+
+p {
+  margin: 0;
+  margin-bottom: .5em;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  color: $red;
+  transition: color .3s ease;
+  &:hover {
+    color: transparentize($red, 0.2);
+  }
+}
+
+.container {
+  width: 100%;
+  margin-bottom: 80px;
+  &[id] {
+    margin-top: -16px;
+    padding-top: 16px;
+  }
+}
+
+main {
+  margin-bottom: 0 !important;
+}
+
+.mb {
+  margin-bottom: 30px;
+}
+
+.box-text {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: $mobile) {
+  body {
+    font-size: 14px;
+  }
+
+  .page-wrapper {
+    overflow: hidden;
+  }
+
+  .container {
+    margin-bottom: 40px;
+  }
+
+  .mb {
+    margin-bottom: 15px;
+  }
+}

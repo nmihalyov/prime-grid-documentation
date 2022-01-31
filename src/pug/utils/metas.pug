@@ -1,0 +1,39 @@
+include og
+
+//- OpenGraph constants
+-const TITLE = ""
+-const URL = ""
+-const IMAGE = ""
+-const DESCRIPTION = ""
+
+//- encoding
+meta(charset="UTF-8")
+
+//- viewport tag
+meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+
+//- short page description
+meta(name="description", content="Prime Grid for your projects")
+
+//- key words
+meta(name="keywords", content="css, flexbox, grid, sass, scss, prime")
+
+//- web application theme color
+meta(name="theme-color", content="#202020")
+
+//- copyriht
+meta(name="copyright", content="Nikita Mihalyov<nikita.mihalyov@gmail.com>")
+
+//- apple web application tags
+meta(name="apple-mobile-web-app-capable", content="yes")
+meta(name="apple-mobile-web-app-status-bar-style", content="#202020")
+meta(name="apple-mobile-web-app-title", content="Prime Grid")
+
+//- windows web application tags
+meta(name="msapplication-TileImage", content=require("@/assets/images/favicons/144x144.png"))
+meta(name="msapplication-TileColor", content="#202020")
+
+//- disable phone number link
+meta(name="format-detection", content="telephone=no")
+
++open-graph(TITLE, URL, IMAGE, DESCRIPTION)

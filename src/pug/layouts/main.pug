@@ -1,0 +1,20 @@
+include /components/header/header
+include /components/footer/footer
+
+block variables
+
+doctype html
+html(lang='en')
+  head
+    title #{title}
+    include ../utils/metas
+    include ../utils/links
+
+  body
+    .page-wrapper
+      +header
+      block content
+      +footer
+
+    script(src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js")
+    script hljs.highlightAll();

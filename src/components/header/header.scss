@@ -1,0 +1,43 @@
+.header {
+  padding-top: 60px;
+  text-align: center;
+  .title {
+    font: {
+      size: 72px;
+    }
+  }
+  .subtitle {
+    margin-bottom: 20px;
+    font: {
+      size: 26px;
+      weight: 300;
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    .button {
+      margin: 0 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .header {
+    padding-top: 30px;
+    .title {
+      font-size: 42px;
+    }
+    .subtitle {
+      font-size: 20px;
+    }
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+      .button {
+        width: 200px;
+        margin: 5px 0;
+      }
+    }
+  }
+}

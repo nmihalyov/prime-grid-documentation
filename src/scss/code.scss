@@ -1,0 +1,22 @@
+pre {
+  display: block;
+  width: 100%;
+  border: 1px solid #dee2e6;
+  white-space: pre;
+  code {
+    display: block;
+    padding: 24px !important;
+    background-color: #f8f9fa !important;
+    word-break: normal;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  pre {
+    code {
+      padding: 16px !important;
+      font-size: 14px;
+    }
+  }
+}
